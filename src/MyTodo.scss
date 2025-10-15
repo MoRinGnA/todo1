@@ -1,0 +1,52 @@
+div#MyTodo {
+  h1 {
+    border-bottom: 1px solid gray;
+    text-shadow: 1px 1px 2px #aaa;
+  }
+  table {
+    margin: 1em 0;
+    width: 100%;
+  }
+  thead {
+    background-color: #eee;
+    text-align: center;
+  }
+  tr.gray {
+    background-color: #f8f8f8;
+    color: #bbb;
+    text-decoration: line-through;
+  }
+
+  td {
+    border-bottom: 1px solid #bbb;
+    padding: 0.3em;
+  }
+  td:nth-child(1) {
+    text-align: center;
+    width: 30px;
+  }
+  input {
+    padding: 0.3em;
+    margin-right: 0.5em;
+    width: 23em;
+  }
+  input[type="checkbox"] {
+    margin-right: 0.5em;
+    accent-color: #bbb;
+  }
+  button {
+    padding: 0.2em 1em;
+    border: none;
+    background-color: #08f;
+    box-shadow: 2px 2px 3px #999;
+    color: white;
+    text-shadow: 1px 1px 2px #444;
+    &:active {
+      box-shadow: none;
+      transform: translateY(2px);
+      border: none;
+      text-shadow: none;
+      background-color: #06c;
+    }
+  }
+}
