@@ -1,6 +1,71 @@
-div#App {
-  padding: 2em;
-  margin: 1em auto;
-  width: auto;
-  box-shadow: 2px 2px 6px #aaa;
+div#MyTodo {
+  width: 35em;
+
+  h1 {
+    border-bottom: 1px solid gray;
+    text-shadow: 1px 1px 2px #aaa;
+  }
+  table {
+    margin: 1em 0;
+    width: 100%;
+    font-size: 11pt;
+    border-collapse: collapse;
+  }
+  thead {
+    background-color: #eee;
+  }
+  th {
+    padding: 0.3em;
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+  }
+  th:nth-child(1) {
+    text-align: center;
+    width: 30px;
+  }
+  tr.gray {
+    background-color: #f8f8f8;
+    color: #bbb;
+    text-decoration: line-through;
+  }
+  td {
+    border-bottom: 1px solid #bbb;
+    padding: 0.3em;
+  }
+  td:nth-child(1) {
+    text-align: center;
+    width: 30px;
+  }
+  td span {
+    font-weight: bold;
+    float: right;
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+  input[type="checkbox"] {
+    margin-right: 0.5em;
+    accent-color: #bbb;
+  }
+  input[type="text"] {
+    padding: 0.3em;
+    margin-right: 0.5em;
+    width: 23em;
+    font-size: 11pt;
+  }
+  button {
+    padding: 0.2em 1em;
+    border: none;
+    font-size: 11pt;
+    background-color: #08f;
+    box-shadow: 2px 2px 3px #999;
+    color: white;
+    text-shadow: 1px 1px 2px #444;
+    &:active {
+      box-shadow: none;
+      transform: translateY(2px);
+      border: none;
+    }
+  }
 }
